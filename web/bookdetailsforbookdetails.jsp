@@ -1,90 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Education</title>
-<meta name="keywords" content="free css templates, education, school, college, university, templatemo.com" />
-<meta name="description" content="Education template is for academic related websites" />
-<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
-
-<script type="text/javascript">
-function ctck()
-{
-var sds = document.getElementById("dum");
-if(sds == null){alert("You are using a free package.\n You are not allowed to remove the tag.\n");}
-}
-</script>
-
-<SCRIPT LANGUAGE="JavaScript">
-function dil(form)
-{
-   for(var i=0; i<form.elements.length; i++)
-   {
-		if(form.elements[i].value == "")
-		{
-		   alert("Fill out all Fields")
-		   document.F1.accountno.focus()
-		   return false
-		}
-   }
-
-   if(isNaN(document.F1.accountno.value))
-   {
-       alert("Accountno must  be  number & can't be null")
-	   document.F1.accountno.value=""
-	   document.F1.accountno.focus()
-	   return false
-   }
-   if(!isNaN(document.F1.username.value))
-   {
-       alert("User Name  must  be  char's & can't be null")
-	   document.F1.username.value=""
-	   document.F1.username.focus()
-	   return false
-   }
-
-   if(!isNaN(document.F1.password.value))
-   {
-       alert("Password  must  be  char's & can't be null")
-	   document.F1.password.value=""
-	   document.F1.password.focus()
-	   return false
-   }
-   
-   return true   
-}
-</SCRIPT>
+    <%@include file="head.jsp" %>
+    <script type="text/javascript" src="javascript/library.js"></script>
 
 </head>
 <body>
-<div id="templatemo_header_wrapper">
-    <div id="templatemo_header">
-    	<div id="site_title">
-            <h1><a href="http://www.cstpoint.com" target="_parent">
-                <img src="images/templatemo_logo.png" alt="Site Title" />
-                <span>free css templates</span>
-            </a></h1>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet, ipsum bibendum pretium volutpat, diam magna facilisis ante.</p>
-    
-    </div> <!-- end of templatemo_header -->
-
-</div> <!-- end of templatemo_menu_wrapper -->
-
-<div id="templatemo_menu_wrapper">
-    <div id="templatemo_menu">
-        
-        <ul>
-          <li><a href="index.html">Home</a></li>
-                    <li><a href="admin.jsp">Adminstrator</a></li>
-                    <li><a href="member.jsp">Library Member</a></li>
-                    <li><a href="bookdetailsforbookdetails.jsp">Book Details</a></li>
-                     <li><a href="aboutus.jsp">About Us</a></li>
-                    <li><a href="contactus.jsp">Contact Us</a></li>
-                   </ul>    	
-     
-    </div> <!-- end of templatemo_menu -->
-</div>
+    <%@include file="header.jsp" %>
 
 <div id="templatemo_content_wrapper">
 
